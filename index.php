@@ -50,7 +50,6 @@
       <br />
       <div class="page-content">V=(LxHxW)/3</div>
       <br />
-      <p>Please enter integers for dimensions</p>
       <div class="page-content">Please enter integers for dimensions</div>
       <div class="page-content-php">
         <form action="answer.php" method="GET">
