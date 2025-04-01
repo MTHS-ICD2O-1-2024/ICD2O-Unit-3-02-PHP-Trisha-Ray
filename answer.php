@@ -55,7 +55,7 @@
           $volume = ($length * $width * $height) / 3;
           // output
           echo "<br />";
-          echo "Volume is " . $volume . " mm².";
+          echo "Volume is " . $volume . " mm³.";
           ?>
         </div>
         <div class="page-content-answer">
