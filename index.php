@@ -31,11 +31,7 @@
     href="./favicon-16x16.png" />
   <title>Volume of a Pyramid, with PHP</title>
 </head>
-<div class="page-content">Formula</div>
-<br />
-<div class="page-content">V=(LxHxW)/3</div>
-<br />
-<p>Please enter integers for dimensions</p>
+
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script src="./js/script.js"></script>
@@ -50,6 +46,11 @@
         <img src="./images/pyramid.png" alt="Pyramid Volume" />
       </div>
       <br />
+      <div class="page-content">Formula</div>
+      <br />
+      <div class="page-content">V=(LxHxW)/3</div>
+      <br />
+      <p>Please enter integers for dimensions</p>
       <div class="page-content">Please enter integers for dimensions</div>
       <div class="page-content-php">
         <form action="answer.php" method="GET">
@@ -85,4 +86,5 @@
     </main>
   </div>
 </body>
+
 </html>
