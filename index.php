@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="The Area & Perimeter program" />
+  <meta name="description" content="Volume of a Pyramid, with PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Mr. Coxall" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,37 +29,48 @@
     type="image/png"
     sizes="16x16"
     href="./favicon-16x16.png" />
-  <title>Area of triangle in PHP</title>
+  <title>Volume of a Pyramid, with PHP</title>
 </head>
-
+<div class="page-content">Formula</div>
+<br />
+<div class="page-content">V=(LxHxW)/3</div>
+<br />
+<p>Please enter integers for dimensions</p>
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script src="./js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area of triangle in PHP</span>
+        <span class="mdl-layout-title">Volume of a Pyramid, with PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/area_of_trinagle.png" alt="Area Of Triangle" />
+        <img src="./images/pyramid.png" alt="Pyramid Volume" />
       </div>
       <br />
-      <div class="page-content">Enter the length and width in cm.</div>
+      <div class="page-content">Please enter integers for dimensions</div>
       <div class="page-content-php">
         <form action="answer.php" method="GET">
-          <p>Base Length</p>
+          <p>Length</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-length">
-            <label class="mdl-textfield__label" for="base-length">Base Length Here...</label>
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="length">
+            <label class="mdl-textfield__label" for="length">mm</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
-          <p>Heigth Length</p>
+          <p>Width</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="height-length">
-            <label class="mdl-textfield__label" for="height-length">Heigth length Here...</label>
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="width">
+            <label class="mdl-textfield__label" for="width">mm</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <br />
+          <p>Heigth</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="height">
+            <label class="mdl-textfield__label" for="height">mm</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
@@ -70,7 +81,7 @@
             Calculate
           </button>
         </form>
-        </div>
+      </div>
     </main>
   </div>
 </body>
